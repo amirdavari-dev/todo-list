@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="src/main.css" />
+  </head>
+  <body>
+    <button id="darkBtn" class="mt-2 ms-2 block darkBtn">
+      <img
+        src="./src/assets/moon-fill.svg"
+        class="iconDark"
+        width="25"
+        height="25"
+      />
+    </button>
+    <div
+      class="container hover:bg-gray-200 side_effect rounded-[10px] mt-10 shadow-2xl p-8 mx-auto dark:bg-slate-900"
+    >
+      <h6 class="text-center font-bold text-xl dark:text-white">Todo List</h6>
+      <div class="grid grid-cols-1 mb-5">
+        <div>
+          <label
+            for="todoname"
+            class="block font-medium text-black dark:text-white"
+            >Add Item</label
+          >
+          <input
+            type="text"
+            id="todoname"
+            class="block w-1/2 p-2 text-gray-900 rounded-lg bg-gray-300 sm:text-md outline-none focus:ring-blue-500"
+          />
+        </div>
+        <div class="flex items-center content-start gap-2 mt-2">
+          <button
+            id="addBtn"
+            class="bg-green-600 px-3 py-2 rounded-xl hover:scale-75 side_effect dark:bg-slate-500 dark:text-white"
+          >
+            Add To List
+          </button>
+          <button
+            onclick="completedHandler(event)"
+            id="clearBtn"
+            class="dark:text-white text-rose-600 border border-rose-600 px-3 py-2 side_effect rounded-xl hover:bg-rose-600 hover:text-white line-through"
+          >
+            Clear Todo List
+          </button>
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 gap-y-5 gap-x-2 mt-5 main_content"
+      >
+        <!-- <div
+          class="flex justify-between items-center p-3 bg-white shadow-lg border border-gray-300 rounded-xl"
+        >
+          <div>
+            <h1 class="font-bold text-lg titleTodo">${title}</h1>
+          </div>
+          <div class="flex items-center justify-end gap-x-2">
+            <button
+              onclick="completedHandler(event)"
+              id="comBtn"
+              class="p-2 bg-lime-600 hover:scale-75 side_effect text-white rounded-lg"
+            >
+              Complete
+            </button>
+            <button
+              onclick="removeHandler(event)"
+              id="removeBtn"
+              class="p-2 bg-rose-500 hover:bg-white border hover:border-rose-400 side_effect rounded-lg"
+            >
+              Remove
+            </button>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <script src="./src/js/index.js" defer></script>
+  </body>
+</html>
